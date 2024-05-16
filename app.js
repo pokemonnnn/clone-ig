@@ -15,7 +15,6 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-    req.headers["bypass-tunnel-reminder"] = "any_value";
     res.render("Home", {
         title: "home",
     });
