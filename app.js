@@ -16,15 +16,13 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
     res.render("home", {
-        title: "Home",
-        layout: "layouts/main-layouts",
+        title: "home",
     });
 });
 
 app.get("/done", (req, res) => {
     res.render("done", {
-        title: "Done",
-        layout: "layouts/main-layouts",
+        title: "done",
     });
 });
 
